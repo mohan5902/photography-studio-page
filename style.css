@@ -1,0 +1,255 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80');
+
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+    padding:20px;
+}
+
+.tagline{
+    color:#f59e0b;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:25px;
+    font-size:1.1rem;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    background:#f59e0b;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    margin:5px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#d97706;
+    transform:translateY(-2px);
+}
+
+/* NAVBAR */
+
+nav{
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:15px;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#f59e0b;
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#111827;
+    font-size:2rem;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.contact a{
+    color:#111827;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white !important;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    background:#1da851;
+    transform:translateY(-2px);
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    margin-top:10px;
+    color:#d1d5db;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .section-title{
+        font-size:1.7rem;
+    }
+}
